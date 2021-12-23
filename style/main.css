@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --bright-yellow: hsl(71, 73%, 54%);
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+}
+
+.head {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 15px 15px 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+}
+
+.container > .card {
+  overflow: hidden;
+  border-radius: 7px;
+  -webkit-box-shadow: 5px 5px 20px rgba(152, 167, 189, 0.678);
+          box-shadow: 5px 5px 20px rgba(152, 167, 189, 0.678);
+}
+
+@media (min-width: 576px) {
+  .container > .card {
+    width: 750px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container > .card > .child {
+  padding: 25px 20px;
+}
+
+@media (min-width: 576px) {
+  .container > .card > .child {
+    padding: 45px 40px;
+  }
+}
+
+.container > .card > .header {
+  background-color: white;
+}
+
+@media (min-width: 576px) {
+  .container > .card > .header {
+    -ms-grid-column-span: 2 span;
+        grid-column-end: 2 span;
+  }
+}
+
+.container > .card > .header > .head {
+  color: var(--cyan);
+}
+
+.container > .card > .header > .second-head {
+  font-weight: bold;
+  color: var(--bright-yellow);
+}
+
+.container > .card > .header > .desc {
+  line-height: 2;
+  color: var(--grayish-blue);
+}
+
+@media (min-width: 576px) {
+  .container > .card > .header > .desc {
+    margin-bottom: 0;
+  }
+}
+
+.container > .card > .sub {
+  color: var(--light-gray);
+  background-color: var(--cyan);
+}
+
+.container > .card > .sub > .price h3 {
+  margin: 0;
+  color: white;
+  font-size: 40px;
+}
+
+.container > .card > .sub > .price h3 span {
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.container > .card > .sub .sign {
+  width: 100%;
+  font: inherit;
+  padding: 20px;
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 7px;
+  color: vaR(--light-gray);
+  background-color: var(--bright-yellow);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container > .card > .why-us {
+  color: var(--light-gray);
+  background-color: #4bbebc;
+}
+
+.container > .card > .why-us .pros {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container > .card > .why-us .pros li {
+  line-height: 1.4;
+}
+/*# sourceMappingURL=main.css.map */

@@ -21,6 +21,10 @@ Your users should be able to:
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
+### Ideas to test yourself
+- Write your styles using a pre-processor, such as Sass, Less or Stylus
+- Practice using modern CSS features like Flexbox and Grid
+
 ## Where to find everything
 
 Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
